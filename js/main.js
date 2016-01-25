@@ -7,7 +7,7 @@ $.ajax({
 })
   .done(function( data ) {
     $.each(data, function(index,item){
-      $( "#data" ).append( item.name + index.status );
+      $( "#data" ).append( item.name + item.status );
 
     })
   });
