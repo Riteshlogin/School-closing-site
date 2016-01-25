@@ -6,7 +6,11 @@ $.ajax({
   dataType: "json"
 })
   .done(function( data ) {
-    $( "#data" ).append( data );
+    $.each(data, function(index,item){
+      $( "#data" ).append( item.name + index.status );
+
+    })
   });
+
 
 });
