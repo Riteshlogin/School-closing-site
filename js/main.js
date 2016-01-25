@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $.ajax({
   url: "https://cors-anywhere.herokuapp.com/http://closings.victorlourng.com/api/?all",
   cache: false,
@@ -6,3 +8,5 @@ $.ajax({
   .done(function( data ) {
     $( "#data" ).append( data );
   });
+
+});
